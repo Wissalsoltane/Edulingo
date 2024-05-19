@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edulingo</title>
+        <link rel='stylesheet' href="css/style.css">
+        <script>
+        function redirectToIndex() {
+            window.location.href = "login.html";
+
+        }
+        function stayOnPage() {
+            
+        }
+        function goToAboutPage() {
+            window.location.href = 'about.php';
+        }
+    </script>
+    <script>
+        function goToPage2() {
+          window.location.href = "login.html"; // يُعيد توجيه المستخدم إلى الصفحة الثانية عند النقر على الزر
+        }
+        </script>
+
+
+</head>
+<body>
+    <header>
+        <h2 class="logo"> Edulingo</h2>
+        <nav class="navigation">
+        <a href="edulingo.html" onclick="stayOnPage()">home</a>
+            <a href="service.html" >services</a>
+            <a href="about.html" onclick="goToAboutPage()">about</a>
+            
+
+        </nav>
+    </header>
+<section class="hero">
+
+    <div class="content">
+        <h3>welcome to Edulingo</h3>
+       <h5>At Edulingo, we're dedicated to providing you with an excellent opportunity to learn English in a fun and effective way. Our platform offers a comprehensive range of language learning resources and tools designed to help you master English at your own pace.</h5>  <h5>Whether you're a beginner or looking to enhance your language skills, Edulingo is here to support your journey towards fluency. With engaging lessons, interactive exercises, and personalized feedback, you'll experience language learning like never before.</h5>  <h5>Join Edulingo today and unlock your potential to communicate confidently in English!</h5>
+      
+    </div>
+</section>
+
+</body>
+</html>
+<style>
+    
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
+    
+}
+ 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+
+  
+
+}
+.logo{
+font-size: 1.7em;
+cursor: default;
+color: #1c0569;
+}
+.navigation a{
+  color: #170263;
+  font-size: 1.1em;
+  margin-left: 12px;
+  text-decoration: none;
+  padding: 6px 15px;
+  font-weight: 600;
+  border-radius: 20px ;
+
+}
+.navigation a:hover{
+  border-bottom: 2px solid #20026c;
+}
+.hero{
+position: relative;
+width: 100%;
+height: 100vh;
+background-size: cover;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #4309e2;
+background-image: url(login-register.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+
+
+
+ 
+
+
+  
+}
+
+
+
+.content{
+    color: #ffffff;
+    text-align: center;
+    
+    letter-spacing: .1em;
+   
+   
+    width: 100%;
+    height: 100%;
+    
+ 
+
+
+
+}
+
+h3{
+  font-size: 2em;
+  color: #1d13de;
+  margin-top: 200px;
+
+}
+h1{
+font-size: 3,5em;
+padding-bottom: 30px;
+}
+button{
+  font-size: 1,3em;
+  font-weight: 600;
+  color: #3c54ca;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 40px;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+  transition: 1s;
+ 
+
+}
+button:hover{
+background: #fff;
+color: #0a0025;
+
+
+}
+h2{
+    color: #170263;
+}
+h5{
+    color: #1d13de;
+    text-align: center;
+    margin: 40px;
+    border: 1px solid blue ;
+    border-radius: 5px;
+    background-color: #ffffffb6;
+    border: none;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "Dancing Script", cursive;
+
+  
+
+
+}
+</style>

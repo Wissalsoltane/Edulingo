@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        
+
+</head>
+<body>
+
+    <h1>Register</h1><br>
+   <div class="main">
+    <br><br>
+    <form action="register_post.php" method="POST">
+    <input type="text" name="username" id="username" placeholder=username><br>
+    <input type="email" name="email" id="email"placeholder="mobile number or email"><br>
+    <input type="password" name="password" id="password"placeholder=" password"><br>
+         <div id="error" class="error-message"></div>
+     <br>
+
+     <div>
+     <br>
+
+     <input type="submit" name="submit" id="submit" value="Register">
+     <br>
+     <h3>or</h3><br>
+      <a id='login' href="login.html">log in</a>
+       </div>
+        </body>
+        </html>
+
+       
+        
+        <style>
+            *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url('login-register.jpg');
+            height: 5%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+           
+            color: rgb(0, 0, 100);
+        }
+        .main{
+        
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            color: #110276;
+            text-align: center;
+            
+            letter-spacing: .1em;
+           
+           
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 25px;
+           
+            margin-left: 440px;
+            height: 0%;
+            width: 40%;
+            margin-top: 30px;
+            
+        
+           
+        
+        }
+        .main input,select{
+            padding: 8px;
+            margin: 2px;
+            background-color: rgb(245,245,245);
+            border: 15px, rgb(38, 1, 124),solid; 
+            outline: none;
+            font-weight: 900;
+            border-color: #110276;
+            font-size: 15px;
+        
+           
+            border-radius: 25px;
+        
+            width: 90%;
+            height: 40px;
+        }
+        select{
+            color: black;
+        }
+        input[type="submit"]{
+            background-color: rgb(1, 1, 118);
+            width: 180px;
+            font-size: 17px;
+            color: white;
+            cursor: pointer;
+        }
+input[type="submit"]:hover{
+    transition: 0.6s;
+    background-color:rgb(13, 23, 216) ;
+    width: 40%;
+    height: 40px;
+}
+#login{
+    background-color:rgb(0, 0, 133)
+    color:white;
+    padding: 8px;
+    border-radius: 3px;
+    
+}
+#login:hover{
+    /*transition: 0.6s;
+    background-color: rgba(47, 142, 197, 0.952);
+    width: 40%;
+    height: 40px;*/
+    background-color: rgb(1, 1, 118);
+    width: 180px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    
+}
+/*
+#error{
+background-color: red;
+color: rgba(255, 0, 0, 0.719);
+padding: 4px;
+}
+*/
+select{
+    color: rgb(255, 255, 255);
+    border-color: rgb(34, 0, 112);
+    padding: 10px;
+    font-size: 10px;
+    background-color: #110276;
+
+    width: calc(19.33% - 10px); /* تقسيم العرض بالتساوي بين الحقول */
+  margin-right: 1px; /* هامش يمين الحقول */
+  margin-bottom: 10px; /* هامش أسفل الحقول */
+}
+
+
+
+</style>

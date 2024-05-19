@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    
+</head>
+<body>
+    <div class="container">
+        <img class="left-image" src="videobutton.jpg" alt="صورة جانبية يسار">
+        <img class="right-image" src="pdfbutton.jpg" alt="صورة جانبية يمي">
+ 
+     <div class="button-container" id="button-container">
+
+    <button  class="btn" >video</button>
+    <button  class="btn1">pdf</button><br>
+    <button class="btn2" name="levelButton" >Reading</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn2" name="levelButton" >Reading</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn3" name="levelButton" >Speaking</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn3" name="levelButton" >Speaking</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn4" name="levelButton" >Writing</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn4" name="levelButton" >Writing</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul> 
+    <button class="btn5" name="levelButton" >Listening</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul> 
+    <button class="btn5" name="levelButton">Listening</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn6" name="levelButton">Quiz</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn6" name="levelButton">Quiz</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn7" name="levelButton">All grammar</button>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+    <button class="btn7" name="levelButton">All grammar</button><br>
+    <ul id="levelList" class="hidden">
+        <li>Level A</li>
+        <li>Level B</li>
+        <li>Level C</li>
+    </ul>
+</div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+    <script>
+    document.getElementsByName('levelButton').forEach((element) => {element.addEventListener('click', toggleLevelList); })
+
+var levelButtons = document.getElementsByClassName("levelButton");
+for (var i = 4; i < levelButtons.length; i++) {
+    levelButtons[i].addEventListener("click", toggleLevelList);
+}
+
+function toggleLevelList(e) {
+        var levelList = e.target.nextElementSibling;
+
+        if (levelList.tagName != 'UL') levelList = levelList.nextElementSibling;
+
+        console.log(levelList);
+
+        if (levelList.classList.contains('hidden')) {
+          levelList.classList.remove('hidden');
+        } else {
+          levelList.classList.add('hidden');
+        }
+      }
+    </script>
+                 
+</body>
+</html>
+<style>
+   
+   .container {
+        position: relative;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+[name='levelButton'] {
+    padding: 10px 20px;
+    font-size: 16px;
+  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#levelList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px; /* تعيين حجم الخط ليكون مثل حجم الزر */
+}
+
+#levelList li {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+    
+   .button-container{
+    text-align: center;
+    margin-top: 40px;
+}
+   button{
+    padding: 30px;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 24px;
+   }
+
+    .btn{
+        color: rgb(216, 1, 1);
+        background-color: rgba(255, 0, 0, 0.352);
+        border: none;
+        border-radius: 15px;
+        height: 15px;
+        width: 170PX; 
+        margin: 30px;
+        
+    }
+    .btn1{
+        border: none;
+        color: rgba(128, 77, 2, 0.986);
+        background-color: rgba(182, 182, 231, 0.669);
+        border-radius: 15px;
+        height: 15px;
+        width: 170PX;
+    }
+    .btn2 {
+        background-color: white;
+        border: none;
+        color: rgb(45, 45, 254);
+    }
+  
+    .btn3{
+        background-color: white;
+        border: none;
+        color: rgb(5, 168, 2);
+    }
+    .btn4{
+        background-color: white;
+        border: none;
+        color: rgb(27, 5, 173);
+    }
+    .btn5{
+        background-color: white;
+        border: none;
+        color: rgb(90, 4, 144);
+    }
+    .btn6{
+        background-color: white;
+        border: none;
+        color: rgb(212, 96, 13);
+    }
+    .btn7{
+        background-color: white;
+        border: none;
+        color: rgb(123, 21, 21);
+    }
+
+    .left-image{
+        float: left;
+        width: 200px; 
+        height: auto;
+        display: block;
+    }
+    .right-image{
+        float: right;
+        width: 200px; 
+        height: auto;
+        display: block;
+    }
+
+</style>
